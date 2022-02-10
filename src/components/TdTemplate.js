@@ -1,11 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './TdTemplate.css';
 
 function TdTemplate({ cc, uc, form, children }) {
     let month = new Date().getMonth() + 1;
     let day = new Date().getDate();
 
-    
+    let [checkHome, setCheckHome] = useState('');
+    let [sg_home, setSgHome] = useState(false);
+
     return(
         <>
         <div className = "tdtemplate">
@@ -34,20 +36,25 @@ function TdTemplate({ cc, uc, form, children }) {
         <div className = "tdtemplate">
             <div className = "suggestion_box">
                 <div className = "day">
-                    이런 일은 어떠세요?
+                    이런 일은 어때요?
                 </div>
             </div>
 
             <section className = "todo">
                 <div className = 'sg_choose'>
-                    오늘은  
-                    <button className = 'sg_button'> 집에만 있을래요 🏡</button>
-                    <button className = 'sg_button'> 외출하는 날! 😎 </button>
+                    오늘은
+                    
+                    <button className={`sg_button ${checkHome === 'curr' ? 'active' : ''}`} onClick={() => setCheckHome('curr')}> 
+                        집에만 있을래요 🏡
+                    </button>
+
+                    <button className={`sg_button ${checkHome === 'prev' ? 'active' : ''}`} onClick={() => setCheckHome('prev')}> 
+                        외출하는 날! 😎 
+                    </button>
                 </div>
                 
                 <br/>
 
-                여기에 할 일 목록 추천을 띄워주는거지 근데 까먹어서 당장은 못해
             </section>
 
             <section className = "done"></section>

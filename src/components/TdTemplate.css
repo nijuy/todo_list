@@ -37,15 +37,31 @@
 }
 
 .sg_button {
+    padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 1rem; padding-right: 1rem;
+    margin-left: 1rem;
+   
+    background: #fffcef;
+    color: rgb(0, 0, 0);
+
+    border-radius: 30px; border-style: hidden;
+    
+    font-size: 15px; font-weight: 350;
+    cursor: pointer;
+}
+
+.sg_button.active {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
     margin-left: 1rem;
-    background: #fffcef;
+
+    background: #ccc6ff;
+    color: rgb(0, 0, 0);
+
     border-radius: 30px;
     border-style: hidden;
-    color: rgb(0, 0, 0);
+    
     font-size: 15px;
     font-weight: 350;
     cursor: pointer;
@@ -72,3 +88,9 @@
     text-align: center;
     padding : 26px 60px;
 }
+
+
+
+.btn { background-color: #fff; border: 1px solid #dbdee2; color: #404a5c; } 
+.btn.active { background-color: #505bf0; color: #fff; }
+
