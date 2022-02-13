@@ -27,8 +27,6 @@ function TdTemplate({ cc, uc, form, children }) {
                 오늘 할 일 {uc}개 중에서 {cc}개 완료 ! ᕕ( ᐛ )ᕗ
             </section>
         </div>
-        
-        <br></br>
         </>
     );
 }

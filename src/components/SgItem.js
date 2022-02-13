@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "./TdItem.css";
+import "./SgItem.css";
 
 class SgItem extends Component {
     render(){
@@ -10,6 +10,8 @@ class SgItem extends Component {
                 <div className = 'sg-text'>
                     <div> { text } </div>
                 </div>
+
+                <div className = "plus_button"> + </div>
             </div>
         );
     }

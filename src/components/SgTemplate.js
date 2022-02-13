@@ -3,17 +3,13 @@ import SgList from './SgList';
 import './TdTemplate.css';
 
 function SgTemplate() {
-
-    let [checkHome, setCheckHome] = useState('');
-    //let [sg_home, setSgHome] = useState(false);
-
+    let [checkHome, setCheckHome] = useState('curr');
+    
     return(
         <>
         <div className = "tdtemplate">
             <div className = "suggestion_box">
-                <div className = "day">
-                    이런 일은 어때요?
-                </div>
+                <div className = "day"> 이런 일은 어때요? </div>
             </div>
 
             <section className = "todo">
@@ -27,10 +23,10 @@ function SgTemplate() {
                     </button>
                 </div>
             <br/>
-                      
+            
+            <SgList checkHome = {checkHome} />
             </section>
-
-            <section className = "done"></section> 
+            
         </div>
 
         </>

@@ -1,0 +1,39 @@
+.sg-item {
+    padding: 1rem;
+    display: flex;
+    align-items: center; /* 세로 가운데 정렬 */
+    cursor: pointer;
+    transition: all 0.15s;
+    user-select: none;
+  }
+
+  .sg-item:hover {
+    background: #dad6ff;
+  }
+
+  .sg-item + .sg-item {
+    border-top: 1px solid #e6e6e6;
+  }
+
+  .sg-text {
+    text-align: left;
+    flex: 1;
+  }
+
+  .plus_button {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 1rem;
+    background: #dad6ff;
+    border-radius: 3px;
+    color: white;
+    font-size: 15px;
+    font-weight: 350;
+    cursor: pointer;
+}
+
+.plus_button:hover { 
+    background: #c3bdfc;
+  }
