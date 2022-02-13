@@ -1,0 +1,18 @@
+import React, { Component } from 'react';
+import "./TdItem.css";
+
+class SgItem extends Component {
+    render(){
+        const { text } = this.props;
+        
+        return(
+            <div className = "sg-item">
+                <div className = 'sg-text'>
+                    <div> { text } </div>
+                </div>
+            </div>
+        );
+    }
+}
+
+export default SgItem;

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import TdTemplate from "./components/TdTemplate";
+import SgTemplate from "./components/SgTemplate";
 import Form from "./components/Form";
 import TdList from "./components/TdList";
 
@@ -93,13 +94,16 @@ class App extends Component {
             onCreate = { this.handleCreate }
             onKeyPress = { this.handleKeyPress }
           /> 
-      }>
+        }
+      >
         <TdList 
           todos = { todos } 
           onToggle = {this.handleToggle} 
           onRemove = {this.handleRemove}
         />
       </TdTemplate>
+
+      <SgTemplate/>
     </div>);
   }
 }
