@@ -10,11 +10,10 @@ class SgItem extends Component {
                 <div className = 'sg-text'>
                     <div> { text } </div>
                 </div>
-
-                <div className = "plus_button"> + </div>
             </div>
         );
     }
 }
 
 export default SgItem;
+

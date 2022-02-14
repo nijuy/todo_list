@@ -3,6 +3,7 @@ import TdTemplate from "./components/TdTemplate";
 import SgTemplate from "./components/SgTemplate";
 import Form from "./components/Form";
 import TdList from "./components/TdList";
+import SgList from './components/SgList';
 
 class App extends Component {
   id = 0;
@@ -95,15 +96,20 @@ class App extends Component {
             onKeyPress = { this.handleKeyPress }
           /> 
         }
-      >
-        <TdList 
-          todos = { todos } 
-          onToggle = {this.handleToggle} 
-          onRemove = {this.handleRemove}
-        />
+        children = {
+          <TdList 
+            todos = { todos } 
+            onToggle = {this.handleToggle} 
+            onRemove = {this.handleRemove}
+          />
+        }> 
+        
       </TdTemplate>
 
-      <SgTemplate/>
+      <SgTemplate 
+        sg_children = { <SgList/> }
+      />
+
     </div>);
   }
 }
