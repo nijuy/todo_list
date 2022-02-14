@@ -1,18 +1,19 @@
 import React, {useState} from 'react';
 import SgList from './SgList';
 import './TdTemplate.css';
+import './SgTemplate.css';
 
 function SgTemplate() {
     let [checkHome, setCheckHome] = useState('curr');
     
     return(
         <>
-        <div className = "tdtemplate">
+        <div className = "sgtemplate">
             <div className = "suggestion_box">
-                <div className = "day"> 이런 일은 어때요? </div>
+                <div className = "sg_text"> 이런 일은 어때요? </div>
             </div>
 
-            <section className = "todo">
+            <section className = "suggestion">
                 <div className = 'sg_choose'>
                     오늘은
                     <button className={`sg_button ${checkHome === 'curr' ? 'active' : ''}`} onClick={() => setCheckHome('curr')}> 

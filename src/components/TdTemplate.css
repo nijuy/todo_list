@@ -20,56 +20,6 @@
     border-top-right-radius: 15px;
 }
 
-.suggestion_box {
-    padding: 22px;
-    font-size: 20px;
-    text-align: center;
-    font-weight: lighter;
-    background: #a99fff;
-    color: white;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
-.sg_choose {
-    text-align: center;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid #ccc6ff;
-}
-
-.sg_button {
-    padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 1rem; padding-right: 1rem;
-    margin-left: 1rem;
-   
-    background: #fffcef;
-    color: rgb(0, 0, 0);
-
-    border-radius: 30px; border-style: hidden;
-    
-    font-size: 15px; font-weight: 350;
-    cursor: pointer;
-}
-
-.sg_button.active {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin-left: 1rem;
-
-    background: #ccc6ff;
-    color: rgb(0, 0, 0);
-
-    border-radius: 30px;
-    border-style: hidden;
-    
-    font-size: 15px;
-    font-weight: 350;
-    cursor: pointer;
-}
-
-.sg_button:hover { background: #ccc6ff; }
-
 .day {
     font-size: 15px;
 }
@@ -89,9 +39,3 @@
     text-align: center;
     padding : 26px 60px;
 }
-
-
-
-.btn { background-color: #fff; border: 1px solid #dbdee2; color: #404a5c; } 
-.btn.active { background-color: #505bf0; color: #fff; }
-
